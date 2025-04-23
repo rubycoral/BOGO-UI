@@ -6,55 +6,106 @@
   <title>BOGO Offer</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
+  <!-- <style>
+    .content { display: none; }
+    input[type="radio"]:checked ~ .content { display: block; }
+  </style> -->
 </head>
 <body>
   <div class="container">
     <!-- Box 1 -->
     <div class="box">
-        <div class="radioTextPrice">
-            <input type="radio" id="box1" name="offer" />
+      <div class="radioTextPrice">
+        <div class="standardPriceDiv">
+          <div class="radioTextPriceDiv">
+            <input type="radio" id="box1" name="offer" checked />
             <label for="box1">
               1 Unit <span class="discount">10% Off</span>
             </label>
-              <p class="updatedPrice">$10.00 USD <br/> <del>$24.00 USD</del></p>
+          </div>
+          <h5>Standard Price</h5>
         </div>
-      <div class="content">
+        <p class="updatedPrice">$10.00 USD <br/> <del>$24.00 USD</del></p>
+      </div>
+      <div class="content contentMargin product-options">
+        <div class="labels-row">
+          <span class="label">Size</span>
+          <span class="label">Colour</span>
+        </div>
+      
+        <div class="option-row">
+          <span class="option-label">#1</span>
+          <select class="dropdown">
+            <option>S</option>
+            <option>M</option>
+            <option>L</option>
+          </select>
+          <select class="dropdown">
+            <option>Black</option>
+            <option>White</option>
+            <option>Red</option>
+          </select>
+        </div>
+      
+        <div class="option-row">
+          <span class="option-label">#2</span>
+          <select class="dropdown">
+            <option>S</option>
+            <option>M</option>
+            <option>L</option>
+          </select>
+          <select class="dropdown">
+            <option>Colour</option>
+            <option>Black</option>
+            <option>White</option>
+          </select>
+        </div>
       </div>
     </div>
 
     <!-- Box 2 -->
     <div class="box">
-        <input type="radio" id="box2" name="offer" />
-        <label for="box2">
-          2 Unit <span class="discount">20% Off</span>
-        </label>
-        <span class="tag">Most Popular</span>
-      <div class="content">
-        <p>$18.00 USD <del>$24.00 USD</del></p>
-        <div class="item">
-          <label>#1</label>
-          <select>
+      <div class="radioTextPrice ">
+        <div class="radioTextPriceDiv">
+          <input type="radio" id="box2" name="offer" />
+          <label for="box2">
+            2 Unit <span class="discount">20% Off</span>
+          </label>
+          <span class="tag">Most Popular</span>
+        </div>
+        <p class="updatedPrice">$18.00 USD <br/> <del>$24.00 USD</del></p>
+      </div>
+      <div class="content product-options">
+        <div class="labels-row">
+          <span class="label">Size</span>
+          <span class="label">Colour</span>
+        </div>
+      
+        <div class="option-row">
+          <span class="option-label">#1</span>
+          <select class="dropdown">
             <option>S</option>
             <option>M</option>
             <option>L</option>
           </select>
-          <select>
+          <select class="dropdown">
             <option>Black</option>
             <option>White</option>
             <option>Red</option>
           </select>
         </div>
-        <div class="item">
-          <label>#2</label>
-          <select>
+      
+        <div class="option-row">
+          <span class="option-label">#2</span>
+          <select class="dropdown">
             <option>S</option>
             <option>M</option>
             <option>L</option>
           </select>
-          <select>
+          <select class="dropdown">
+            <option>Colour</option>
             <option>Black</option>
             <option>White</option>
-            <option>Red</option>
           </select>
         </div>
       </div>
@@ -62,37 +113,106 @@
 
     <!-- Box 3 -->
     <div class="box">
-      <input type="radio" id="box3" name="offer" />
-      <label for="box3">
-        3 Unit <span class="discount">30% Off</span>
-      </label>
-      <div class="content">
-        <p>$24.00 USD <del>$24.00 USD</del></p>
+      <div class="radioTextPrice">
+        <div class="radioTextPriceDiv">
+          <input type="radio" id="box3" name="offer" />
+          <label for="box3">
+            3 Unit <span class="discount">30% Off</span>
+          </label>
+        </div>
+        <p class="updatedPrice">$24.00 USD <br/> <del>$24.00 USD</del></p>
+      </div>
+
+      <div class="content product-options">
+        <div class="labels-row">
+          <span class="label">Size</span>
+          <span class="label">Colour</span>
+        </div>
+      
+        <div class="option-row">
+          <span class="option-label">#1</span>
+          <select class="dropdown">
+            <option>S</option>
+            <option>M</option>
+            <option>L</option>
+          </select>
+          <select class="dropdown">
+            <option>Black</option>
+            <option>White</option>
+            <option>Red</option>
+          </select>
+        </div>
+      
+        <div class="option-row">
+          <span class="option-label">#2</span>
+          <select class="dropdown">
+            <option>S</option>
+            <option>M</option>
+            <option>L</option>
+          </select>
+          <select class="dropdown">
+            <option>Colour</option>
+            <option>Black</option>
+            <option>White</option>
+          </select>
+        </div>
       </div>
     </div>
 
     <div class="footer">
-       <div>
-        <p class="coloredText"> Free Delivery</p>
-        <p class="pText">Total: $18.00 USD</p>
-       </div>
+      <div>
+        <p class="coloredText">Free Delivery</p>
+        <p class="pText">Total: $10.00 USD</p>
+      </div>
       <button><span>+</span>Add to Cart</button>
-      <i>@ Powered by Pumper</i>
     </div>
+    <i>@ Powered by Pumper</i>
   </div>
 
-  <script>
-    const radios = document.querySelectorAll('input[type="radio"]');
-    const contents = document.querySelectorAll('.content');
+ <script>
+  const radios = document.querySelectorAll('input[type="radio"]');
+  const totalText = document.querySelector('.footer .pText');
 
-    radios.forEach((radio, index) => {
-      radio.addEventListener('change', () => {
-        contents.forEach(content => content.style.display = '');
-        if (radio.checked) {
-          contents[index].style.display = 'block';
+  function updateDisplay() {
+    document.querySelectorAll('.box').forEach((box) => {
+      const radio = box.querySelector('input[type="radio"]');
+      const content = box.querySelector('.content');
+
+      if (radio.checked) {
+        content.style.display = 'block';
+
+        // Update total
+        const priceText = box.querySelector('.updatedPrice').textContent.trim();
+        const priceMatch = priceText.match(/\$([\d.]+)/);
+        if (priceMatch) {
+          totalText.textContent = `Total: $${priceMatch[1]} USD`;
         }
-      });
+      } else {
+        content.style.display = 'none';
+      }
     });
-  </script>
+  }
+
+  // Attach event listeners to all radios
+  radios.forEach(radio => {
+    radio.addEventListener('change', updateDisplay);
+  });
+
+  // Trigger display update on load
+  window.addEventListener('DOMContentLoaded', () => {
+    updateDisplay();
+  });
+
+  document.querySelectorAll('.box').forEach(box => {
+  box.addEventListener('click', (e) => {
+    if (e.target.tagName.toLowerCase() !== 'input') {
+      const radio = box.querySelector('input[type="radio"]');
+      radio.checked = true;
+      radio.dispatchEvent(new Event('change'));
+    }
+  });
+});
+</script>
+
 </body>
 </html>
