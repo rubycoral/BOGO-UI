@@ -14,12 +14,40 @@
   
   .container {
     width: 100%;
-    max-width: 420px;
+    max-width: 500px;
     background-color: white;
-    border-radius: 12px;
+    border-radius: 4px;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    padding: 50px;
+    padding-top: 20px;
   }
+
+  .container h1{
+    color: #FF6B82;
+  }
+
+  h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    text-align: center;
+    position: relative;
+    margin-top:20px;
+    margin-bottom: 20px;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+  }
+  
+  h1::before,
+  h1::after {
+    content: '';
+    flex: 1;
+    height: 1.5px;
+    background-color: #C8C8C8;
+  }
+  
   
   .box {
     border: 2px solid #ddd;
@@ -74,8 +102,6 @@
     border-bottom-right-radius: 4px;
   }
   
-      
-  
   .content {
     display: none;
     animation: fadeIn 0.3s ease-in-out;
@@ -127,8 +153,8 @@
   }
   
   .footer p {
-    font-size: 14px;
-    margin-bottom: 10px;
+    font-size: 15px;
+    margin-bottom: 12px;
   }
 
   .footer .coloredText{
@@ -155,16 +181,20 @@
     font-weight: 500;
     cursor: pointer;
     width: 100%;
-    font-size: 16px;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer button span{
+    font-size: 24px;
   }
 
   .footer span{
-    font-weight: bold;
     margin-right: 8px;
   }
 
-
-  
   .footer button:hover {
     background-color: #1cdbd9;
   }
@@ -230,7 +260,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding-left: 40px; /* align with dropdowns */
-    font-weight: 600;
+    font-weight: 500;
     color: #000;
     margin-bottom: 10px;
   }
@@ -261,8 +291,8 @@ input[type="radio"] {
   background-color: #fff;
   border: 2px solid #ccc;
   border-radius: 50%;
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   cursor: pointer;
   position: relative;
   outline: none;
@@ -270,13 +300,16 @@ input[type="radio"] {
 }
 
 input[type="radio"]:checked {
-  border: 6px solid #ff6b82;
+  border: 4px solid #ff6b82;
   background-color: #fff;
 }
 
 /* Optional: pink hover effect */
 input[type="radio"]:hover {
   border-color: #ff6b82;
+}
+.option-label{
+  font-size: 12px;
 }
   
 
